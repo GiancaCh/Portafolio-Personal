@@ -1,0 +1,39 @@
+body{
+    background: url(fondo1.avif) center center;
+    background-size: auto;
+    font-family:'Monaco';
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#Presentacion {
+    background-color: #3AAED8;
+    padding: 20px;
+    text-shadow: 50px;
+    border-radius: 12px;
+    border: solid;
+    border-width: 2px;
+    width: 350px;
+}
+
+#Sobre_mi {
+    background-color: #3AAED8;
+    padding: 20px;
+    text-shadow: 50px;
+    border-radius: 12px;
+    border: solid;
+    border-width: 2px;
+    width: 350px;
+}
+
+#Habilidades {
+    background-color: #3AAED8;
+    padding: 20px;
+    text-shadow: 50px;
+    border-radius: 12px;
+    border: solid;
+    border-width: 2px;
+    width: 350px;
+}
