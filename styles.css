@@ -1,98 +1,292 @@
-html{
+Voy a construir sobre lo que ya tienes, corrigiendo detalles y agregando lo que falta (responsive, flexbox en galería/habilidades/footer, hover, etc.). Aquí está completo y comentado:
+
+css
+/* ===== BASE ===== */
+html {
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     color: white;
     background-color: #2660A4;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
 }
 
-header{
+.ParrafoPresentacion{
+    color: #F19953;
+
+}
+
+h2, h3 {
+    line-height: 1;
+}
+
+/* ===== HEADER / NAV ===== */
+header {
     background-color: #2660A4;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-#Logo{
+#Logo {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
 
-#Logo span{
+#Logo span {
     color: #F19953;
 }
 
-nav{
-    align-items: center;
-    margin: 0 auto;
-    justify-content: space-between;
-    max-width: 1400px;
+nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 1rem 10%;
+    gap: 1rem;
 }
 
-a:hover{
-    padding: 15px;
+/* menú oculto en móvil, visible desde tablet */
+#menu {
+    display: none;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li a{
+    color: #F19953;
     text-decoration: none;
+}
+
+li a:hover{
+    color: #ffff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #F19953;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+    display: inline-block;
+    padding: 0.7em 1.4em;
+    margin: 0.5em 0.5em 0.5em 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primario {
+    background-color: #F19953;
+    color: white;
+    border: 2px solid #F19953;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== SECCIONES GENERALES ===== */
+section {
+    padding: 2rem 5%;
+}
+
+/* tarjetas tipo "card" reutilizables */
+.card {
+    color: black;
+    background-color: #EDF7F6;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid #F19953;
+    width: 100%;
+    max-width: 315px;
+    margin: 20px auto;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#Presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#Presentacion h4{
+    color: #F19953;
+}
+
+#ImagenPresentacion {
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    border: 5px solid #F19953;
+    border-radius: 50%;
+}
+
+/* ===== SOBRE MI ===== */
+#Sobre_mi {
+    text-align: center;
+    background-color: #EDF7F6;
+    color: #56351E;
+}
+
+#Sobre_mi article.card {
+    display: inline-block;
+    text-align: left;
+}
+
+/* ===== PROYECTOS ===== */
+#Proyectos {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #EDF7F6;
+    gap: 1.5rem;
+}
+
+#Proyectos h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.card-proyecto img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card-proyecto figcaption {
+    display: none; /* la usamos solo para accesibilidad/lectores de pantalla */
+}
+
+/* ===== HABILIDADES ===== */
+#Habilidades {
+    background-color: #F19953;
+    text-align: center;
+    padding: 50px;
+}
+
+#Skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.Habilidad {
+    background-color: #C47335;
+    color: white;
+    padding: 0.8em 1.5em;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#Contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #EDF7F6;
+    color: black;
+    text-align: left;
+}
+
+.BotonContactame{
+    background-color: #2660A4;
+    padding: 20px;
+    border: #2660A4;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #EDF7F6;
+}
+
+#Contacto a:hover{
+    color: #F19953;
+    transform: scale(1.05)
+}
+
+/* ===== FOOTER ===== */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 5%;
+    background-color: #2660A4;
+}
+
+#RedesFooter {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#RedesFooter a {
+    color: #F19953;
+    text-decoration: none;
+}
+
+#RedesFooter a:hover {
     color: white;
 }
 
-ul{
-    list-style: none;
+/* ===== RESPONSIVE: TABLET ===== */
+@media (min-width: 768px) {
+    #menu {
+        display: flex;
+    }
+
+    #Presentacion {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #Presentacion article {
+        max-width: 50%;
+    }
 }
 
+/* ===== RESPONSIVE: DESKTOP ===== */
+@media (min-width: 1024px) {
+    #Sobre_mi {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        text-align: left;
+    }
 
-#Presentacion {
-    color: black;
-    background-color: #EDF7F6;
-    padding: 20px;
-    border-radius: 20px;
-    border-color: #F19953;
-    border: solid;
-    border-width: 5px;
-    width: 315px;
-    margin-bottom: 20px;
-    margin-top: 20px
+    .card-proyecto {
+        flex: 1 1 calc(33% - 2rem);
+    }
 }
 
-#Sobre_mi {
-    color: black;
-    background-color: #EDF7F6;
-    padding: 20px;
-    border-radius: 20px;
-    border-color: #F19953;
-    border: solid;
-    border-width: 5px;
-    width: 315px;
-    margin-top: 20px
-}
-
-#ImagenPresentacion{
-    width: 275px;
-    height: 400px;
-    border: solid;
-    border-radius: 999px;
-}
-
-#Habilidades {
-    color: black;
-    background-color: #EDF7F6;
-    padding: 20px;
-    border-radius: 20px;
-    border-color: #F19953;
-    border: solid;
-    border-width: 5px;
-    width: 315px;
-    margin-top: 20px;
-    margin-bottom: 20px
-}
-
-#ImagenP1{
-    width: 275px;
-    height: 400px;
-    border-radius: 999px;
-}
-
-footer {
-    justify-content: end;
-}

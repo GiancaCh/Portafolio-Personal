@@ -3,62 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portafolio personal</title>
+    <title>Giancarlo Ch. | Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
     <header>
         <nav>
-            <div id="Logo">Giancarlo<span>Ch</div>
-            <ul>
-                <il><a href="#Sobre_mi">Sobre mí</a></il>
-                <il><a href="#Habilidades">Habilidades</a></il>
-                <il><a href="#Proyectos">Proyectos</a></il>
-                <il><a href="#Contacto">Contactos</a></il>
+            <p id="Logo">Giancarlo<span>Ch</span></p>
+            <ul id="menu">
+                <li><a href="#Presentacion">Inicio</a></li>
+                <li><a href="#Sobre_mi">Sobre mí</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-
     <main>
-        <p>Esta parte es la presentacion</p>
-        <section id="Sobre_mi">
-            <h2>Sobre mi</h2>
-            <p>Aquí detallo toda la información sobre mi persona</p>
-        </section>
-            <img id="ImagenPresentacion" src="fotopropia.jpeg" alt="Imagen Proyecto 1">
-        <article>
-            <h3>Proyecto 1: App de Notas</h3>
-                <img id="ImagenP1" src="foto.jpeg" alt="Imagen Proyecto 1">   
-            <p>Descripción del desarrollo de este proyecto.</p>
-        </article>
-        <aside>ESTE ES UN ASIDE</aside>
-
         <section id="Presentacion">
-            <h2>Bienvenidos a mi sitio</h2>
-            <p>Esta es la primera sección que ve el usuario.</p>
+            <article>
+                <p class="ParrafoPresentacion">Hola, soy</p>
+                <h1>Giancarlo</h1>
+                <h2>Desarrollador de Software Junior</h2>
+                <p>Desarrollo paginas web y aplicaciones que se acoplan a lo que pide el usuario.</p>
+                <a href="#Proyectos" class="btn btn-primario">Ver mis proyectos</a>
+                <a href="MiCurriculum.pdf" class="btn btn-secundario" download>Descargar CV</a>
+                <ul id="RedesHeader">
+                    <li><a href="https://github.com/GiancaCh" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/giancach_?igsh=ejhydzV5Zmxxd3I3" target="_blank">Instagram</a></li>
+                </ul>
+            </article>
+            <figure>
+                <img id="ImagenPresentacion" src="Imagenes/imagensinfoto.png" alt="FotoDePerfil">
+            </figure>
         </section>
 
-        <section id="Habilidades">
-            <h2>Habilidades</h2>
-            <p>HTML, CSS, Python, git, github</p>
+        <section id="Sobre_mi">
+            <h2>Sobre mí</h2>
+            <p>Soy un desarrollador apasionado por crear experiencias digitales increíbles. Me enfoco en escribir código limpio, escalable y en constante aprendizaje.</p>
+            <a href="#" class="BotonMásInfo">Más sobre mí</a>
+
+            <article class="card">
+                <h3>Desarrollo Web</h3>
+                <p>Creo sitios web, rápidos y responsivos usando HTML y CSS.</p>
+            </article>
+            <article class="card">
+                <h3>Diseño de paginas web</h3>
+                <p>Diseño interfaces intuitivas que ofrecen una mejor experiencia.</p>
+            </article>
+            <article class="card">
+                <h3>Rendimiento</h3>
+                <p>Me aseguro de que cada proyecto sea optimizado para el mejor rendimiento posible.</p>
+            </article>
         </section>
 
         <section id="Proyectos">
-            <h2>Proyectos</h2>
-            <p>Aquí detallo los proyectos que he realizado como Web Developer</p>
+            <h2>Proyectos Destacados</h2>
+
+            <article class="card card-proyecto">
+                <figure>
+                    <img src="Imagenes/ImagenInspiracionP1.png" alt="Imagen Proyecto #1">
+                    <figcaption>Portafolio personal</figcaption>
+                </figure>
+                <h3>Web de Portafolio Personal</h3>
+                <p>Aplicación web para mostrar y visualizar de lo que eres capaz.</p>
+            </article>
+
+            <article class="card card-proyecto">
+                <figure>
+                    <img src="proyecto2.jpeg" alt="Tienda Online">
+                    <figcaption>Tienda Online</figcaption>
+                </figure>
+                <h3>Tienda Online</h3>
+                <p>E-commerce moderno con carrito de compras y pasarela de pago.</p>
+            </article>
+
+            <article class="card card-proyecto">
+                <figure>
+                    <img src="proyecto3.jpeg" alt="Landing Page">
+                    <figcaption>Landing Page</figcaption>
+                </figure>
+                <h3>Landing Page</h3>
+                <p>Página de aterrizaje para producto digital con diseño moderno.</p>
+            </article>
+        </section>
+
+        <section id="Habilidades">
+            <h2>Lenguajes y tecnologías que utilizo</h2>
+            <ul id="Skills">
+                <li class="Habilidad">HTML</li>
+                <li class="Habilidad">CSS</li>
+                <li class="Habilidad">Java</li>
+                <li class="Habilidad">Python</li>
+                <li class="Habilidad">Visual Studio code</li>
+                <li class="Habilidad">Git/Github</li>
+            </ul>
+        </section>
+
+        <section id="Contacto">
+            <div class="texto_contacto">
+            <h3>¿Tienes un proyecto en mente?</h3>
+            <p>Estoy disponible para trabajar en proyectos increíbles.</p>
+            </div>
+            <a href="https://discord.com/" class="BotonContactame"><strong>Contáctame</strong></a>
         </section>
     </main>
 
     <footer>
-        <!-- Sección 4 -->
-        <section id="Contacto">
-            <h2>Redes sociales</h2>
-            <p></p>
-        </section>
         <p><strong>&copy; 2026 GiancarloCh. Todos los derechos reservados.</strong></p>
+        <ul id="RedesFooter">
+            <li><a href="https://github.com/GiancaCh">GitHub</a></li>
+            <li><a href="https://linkedin.com/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/giancach_?igsh=ejhydzV5Zmxxd3I3">Instagram</a></li>
+        </ul>
     </footer>
+
 </body>
 </html>
 
