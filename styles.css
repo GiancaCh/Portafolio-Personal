@@ -1,18 +1,18 @@
 html {
     scroll-behavior: smooth;
+    font-size: 20px;
 }
 
 body {
     color: white;
-    background-color: #2660A4;
+    background-color: #131B23;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
 }
 
 .ParrafoPresentacion{
-    color: #F19953;
-
+    color: #2274A5;
 }
 
 h2, h3 {
@@ -20,7 +20,7 @@ h2, h3 {
 }
 
 header {
-    background-color: #2660A4;
+    background-color: #131B23;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     position: sticky;
     top: 0;
@@ -34,7 +34,7 @@ header {
 }
 
 #Logo span {
-    color: #F19953;
+    color: #2274A5;
 }
 
 nav {
@@ -61,11 +61,6 @@ ul {
     margin: 0;
 }
 
-li a{
-    color: #F19953;
-    text-decoration: none;
-}
-
 li a:hover{
     color: #ffff;
 }
@@ -76,47 +71,19 @@ nav a {
 }
 
 nav a:hover {
-    color: #F19953;
+    color: #2274A5;
 }
-
-.btn {
-    display: inline-block;
-    padding: 0.7em 1.4em;
-    margin: 0.5em 0.5em 0.5em 0;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-.btn-primario {
-    background-color: #F19953;
-    color: white;
-    border: 2px solid #F19953;
-}
-
-.btn-secundario {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-}
-
 
 section {
     padding: 2rem 5%;
     box-shadow: 0px 4px 12px grey;
 }
 
-.card {
+.Tarjeta {
     color: black;
     background-color: #EDF7F6;
     padding: 20px;
     border-radius: 20px;
-    border: 5px solid #F19953;
     width: 100%;
     max-width: 315px;
     margin: 20px auto;
@@ -132,44 +99,137 @@ section {
     padding-bottom: 3rem;
 }
 
-#Presentacion h4{
-    color: #F19953;
-}
-
 #ImagenPresentacion {
     width: 275px;
     height: 275px;
     object-fit: cover;
-    border: 5px solid #F19953;
+    border: 5px solid #2274A5;
     border-radius: 50%;
 }
 
+h1 {
+    text-size-adjust: 30px;
+    font-size: 2.8rem;
+    margin-top: -1rem;
+    margin-bottom: 0.2em;
+}
+
+#Presentacion h2 {
+    color: #2274A5;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+}
+
+#RedesHeader {
+    display: flex;
+    gap: 1rem;
+    margin: 1em 0;
+}
+
+#RedesHeader li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #E9F1F7;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+#RedesHeader li a:hover {
+    background-color: #2274A5;
+}
+
+#RedesHeader img {
+    width: 20px;
+    height: 20px;
+}
+
+.boton_Proyectos, .boton_Curriculum {
+    display: inline-block;
+    padding: 0.7em 1.4em;
+    margin: 0.5em 0.5em 0.5em 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.boton_Proyectos {
+    background-color: #2274A5;
+    color: white;
+}
+
+.boton_Curriculum {
+    background-color: transparent;
+    color: white;
+    border: 2.5px solid #E9F1F7;
+}
+
+.boton_Proyectos:hover, .boton_Curriculum:hover {
+    transform: scale(1.05);
+}
+
 #Sobre_mi {
+    background-color: #816C61;
+    color: #E9F1F7;
     text-align: center;
-    background-color: #EDF7F6;
-    color: #56351E;
 }
 
-#Sobre_mi article.card {
-    display: flex;
-    text-align: left;
-    align-items: top;
-    box-shadow: 0px 4px 12px grey;
+#Sobre_mi h2 {
+    margin-bottom: 0.3em;
 }
 
-#Sobre_mi a{
-    display: flex;
-    background-color: #2660A4;
-    padding: 15px;
-    border: #2660A4;
-    border-radius: 15px;
+#Sobre_mi > p {
+    margin-top: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Sobre_mi a {
+    display: grid;
+    background-color: #131B23;
+    padding: 0.7em 1.4em;
+    border-radius: 10px;
     text-decoration: none;
     color: #EDF7F6;
+    margin: 1.5rem 0 2rem;
+    transition: transform 0.2s;
 }
 
-#Sobre_mi a:hover{
-    color: #F19953;
-    transform: scale(1.05)
+#Sobre_mi a:hover {
+    color: #2274A5;
+    transform: scale(1.05);
+}
+
+.Tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#Sobre_mi .Tarjeta {
+    background-color: #E9F1F7;
+    color: #131B23;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 12px #131B23;
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+#Sobre_mi .Tarjeta img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 0.8em;
+}
+
+#Sobre_mi .Tarjeta:hover {
+    transform: translateY(-10px);
 }
 
 #Proyectos {
@@ -177,7 +237,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #EDF7F6;
+    background-color: #E9F1F7;
     gap: 1.5rem;
 }
 
@@ -186,17 +246,33 @@ section {
     text-align: center;
 }
 
-.card-proyecto img {
+.TarjetaProyecto {
+    color: black;
+    background-color: #EDF7F6;
+    padding: 20px;
+    border-radius: 20px;
+    border: 15px solid #E7DFC6;
+    width: 100%;
+    max-width: 315px;
+    margin: 20px auto;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.TarjetaProyecto:hover {
+    transform: scale(1.05);
+}
+
+.TarjetaProyecto img {
     max-width: 100%;
     border-radius: 10px;
 }
 
-.card-proyecto figcaption {
-    display: none; 
+.TarjetaProyecto figcaption {
+    display: none;
 }
 
 #Habilidades {
-    background-color: #F19953;
+    background-color: #2274A5;
     text-align: center;
     padding: 50px;
 }
@@ -210,11 +286,26 @@ section {
 }
 
 .Habilidad {
-    background-color: #C47335;
-    color: white;
-    padding: 0.8em 1.5em;
+    background-color: white;
+    color: #56351E;
+    padding: 1.5em;
     border-radius: 10px;
     font-weight: 600;
+    width: 140px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+
+.Habilidad img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 0.5em;
+}
+
+.Habilidad:hover {
+    transform: scale(1.05);
 }
 
 #Contacto {
@@ -223,15 +314,15 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
-    background-color: #EDF7F6;
-    color: black;
+    background-color: #131B23;
+    color: #E9F1F7;
     text-align: left;
 }
 
 .BotonContactame{
-    background-color: #2660A4;
+    background-color: #2274A5;
     padding: 20px;
-    border: #2660A4;
+    border: #131B23;
     border-radius: 15px;
     text-decoration: none;
     color: #EDF7F6;
@@ -248,7 +339,7 @@ footer {
     align-items: center;
     gap: 1rem;
     padding: 2rem 5%;
-    background-color: #2660A4;
+    background-color: #131B23;
 }
 
 #RedesFooter {
@@ -257,7 +348,7 @@ footer {
 }
 
 #RedesFooter a {
-    color: #F19953;
+    color: #2274A5;
     text-decoration: none;
 }
 
@@ -292,7 +383,14 @@ footer {
         text-align: left;
     }
 
-    .card-proyecto {
+    #Sobre_mi h2,
+    #Sobre_mi > p,
+    #Sobre_mi a {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .TarjetaProyecto {
         flex: 1 1 calc(33% - 2rem);
     }
 }

@@ -6,64 +6,71 @@
     <title>Giancarlo Ch | Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div id="INICIO"></div>
+    <div id="nav_inicio"></div>
     <header>
         <nav>
             <p id="Logo">Giancarlo<span>Ch</span></p>
             <ul id="menu">
-                <li><a href="#INICIO">Inicio</a></li>
+                <li><a href="#nav_inicio">Inicio</a></li>
                 <li><a href="#Sobre_mi">Sobre mí</a></li>
-                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#nav_proyectos">Proyectos</a></li>
                 <li><a href="#Habilidades">Habilidades</a></li>
                 <li><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="Presentacion">
-            <article>
-                <p class="ParrafoPresentacion">Hola, soy</p>
-                <h1>Giancarlo</h1>
-                <h2>Desarrollador de Software Junior</h2>
-                <p>Desarrollo paginas web y aplicaciones que se acoplan a lo que pide el usuario.</p>
-                <a href="#Proyectos" class="btn btn-primario">Ver mis proyectos</a>
-                <a href="MiCurriculum.pdf" class="btn btn-secundario" download>Descargar CV</a>
-                <ul id="RedesHeader">
-                    <li><a href="https://github.com/GiancaCh" target="_blank">GitHub</a></li>
-                    <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/giancach_?igsh=ejhydzV5Zmxxd3I3" target="_blank">Instagram</a></li>
-                </ul>
-            </article>
-            <figure>
-                <img id="ImagenPresentacion" src="Imagenes/imagensinfoto.png" alt="FotoDePerfil">
-            </figure>
-        </section>
+    <section id="Presentacion">
+        <article>
+            <p class="ParrafoPresentacion"><strong>Hola, soy</strong></p>
+            <h1>Giancarlo</h1>
+            <h2>Desarrollador de Software Junior</h2>
+            <p>Desarrollo paginas web y aplicaciones que se acoplan a lo que pide el usuario.</p>
+            <a href="#Proyectos" class="boton_Proyectos">Ver mis proyectos</a>
+            <a href="MiCurriculum.pdf" class="boton_Curriculum" download>Descargar CV</a>
+        <ul id="RedesHeader">
+            <li><a href="https://github.com/GiancaCh" target="_blank"><img src="Imagenes/github-svgrepo-com.svg" alt="GitHub"></a></li>
+            <li><a href="https://linkedin.com/" target="_blank"><img src="Imagenes/linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
+            <li><a href="https://www.instagram.com/giancach_?igsh=ejhydzV5Zmxxd3I3" target="_blank"><img src="Imagenes/instagram-svgrepo-com.svg" alt="Instagram"></a></li>
+        </ul>
+        </article>
+        <figure>
+            <img id="ImagenPresentacion" src="Imagenes/imagensinfoto.png" alt="FotoDePerfil">
+        </figure>
+    </section>
 
         <section id="Sobre_mi">
-            <h2>Sobre mí</h2>
-            <p>Soy un desarrollador apasionado por crear experiencias digitales increíbles. Me enfoco en escribir código limpio, escalable y en constante aprendizaje.</p>
-            <a href="#" class="BotonMásInfo">Más sobre mí</a>
+    <h2>Sobre mí</h2>
+    <p>Me llamo Giancarlo Chacón Chavarría, soy un desarrollador web apasionado por crear ideas en proyectos digitales increíbles. Me enfoco en escribir código limpio, escalable y en constante aprendizaje.</p>
+    <a href="#" class="BotonMásInfo">Más sobre mí</a>
 
-            <article class="card">
-                <h3>Desarrollo Web</h3>
-                <p>Creo sitios web, rápidos y responsivos usando HTML y CSS.</p>
-            </article>
-            <article class="card">
-                <h3>Diseño de paginas web</h3>
-                <p>Diseño interfaces intuitivas que ofrecen una mejor experiencia.</p>
-            </article>
-            <article class="card">
-                <h3>Rendimiento</h3>
-                <p>Me aseguro de que cada proyecto sea optimizado para el mejor rendimiento posible.</p>
-            </article>
+    <div class="Tarjetas">
+        <article class="Tarjeta">
+            <img src="Imagenes/profile-round-1346-svgrepo-com.svg" alt="Icono QuienSoy">
+            <h3>Quien soy</h3>
+            <p>¡Hola! Tengo 18 años y actualmente estoy estudiando un técnico en desarrollo de aplicaciones web. Me encanta el mundo del software y pasar el tiempo probando cosas nuevas. Soy conciente de que todavia empezando mi camino en el area STEM, no me va a faltar la  motivación y dedicación para seguir en esto.</p>
+        </article>
+        <article class="Tarjeta">
+            <img src="Imagenes/muscle-svgrepo-com.svg  " alt="Icono Fortaleza">
+            <h3>Fortalezas</h3>
+            <p>Tengo bases sólidas en software y programación. Sé usar Python, un poco de Java, y me defiendo bien con CSS y HTML para la parte web. Además, manejo Git y GitHub para organizar mis proyectos. Fuera de la computadora, mi mayor fuerte es conectar y trabajar con otras personas.</p>
+        </article>
+        <article class="Tarjeta">
+            <img src="Imagenes/rocket-svgrepo-com.svg" alt="Icono Interes">
+            <h3>Interés</h3>
+            <p>Estoy totalmente abierto a oportunidades de trabajo, especialmente si es para trabajar en equipo. Me entusiasma mucho la idea de unirme a otras personas y poner mis conocimientos a prueba y hacer realidad el proyecto que alguien tenga en mente.</p>
+        </article>
+    </div>
         </section>
+
+        <div id="nav_proyectos"></div>
 
         <section id="Proyectos">
             <h2>Proyectos Destacados</h2>
 
-            <article class="card card-proyecto">
+            <article class="TarjetaProyecto">
                 <figure>
                     <img src="Imagenes/ImagenInspiracionP1.png" alt="Imagen Proyecto #1">
                     <figcaption>Portafolio personal</figcaption>
@@ -72,7 +79,7 @@
                 <p>Aplicación web para mostrar y visualizar de lo que eres capaz.</p>
             </article>
 
-            <article class="card card-proyecto">
+            <article class="TarjetaProyecto">
                 <figure>
                     <img src="Imagenes/Imagentiendaonline.png" alt="Tienda Online">
                     <figcaption>Tienda Online</figcaption>
@@ -81,7 +88,7 @@
                 <p>E-commerce moderno con carrito de compras, catalogo y con metodos de pago.</p>
             </article>
 
-            <article class="card card-proyecto">
+            <article class="TarjetaProyecto">
                 <figure>
                     <img src="Imagenes/paginacomercioweb.jpg" alt="Pagina Corporativa">
                     <figcaption>Pagina corp</figcaption>
@@ -92,15 +99,33 @@
         </section>
 
         <section id="Habilidades">
-            <h2>Lenguajes y tecnologías que utilizo</h2>
-            <ul id="Skills">
-                <li class="Habilidad">HTML</li>
-                <li class="Habilidad">CSS</li>
-                <li class="Habilidad">Java</li>
-                <li class="Habilidad">Python</li>
-                <li class="Habilidad">Visual Studio code</li>
-                <li class="Habilidad">Git/Github</li>
-            </ul>
+    <h2>Lenguajes y tecnologías que utilizo</h2>
+    <ul id="Skills">
+        <li class="Habilidad">
+            <img src="Imagenes/html-svgrepo-com.svg" alt="Icono HTML">
+            <p>HTML</p>
+        </li>
+        <li class="Habilidad">
+            <img src="Imagenes/css-svgrepo-com.svg" alt="Icono CSS">
+            <p>CSS</p>
+        </li>
+        <li class="Habilidad">
+            <img src="Imagenes/java-svgrepo-com.svg" alt="Icono Java">
+            <p>Java</p>
+        </li>
+        <li class="Habilidad">
+            <img src="Imagenes/python-127-svgrepo-com.svg" alt="Icono Python">
+            <p>Python</p>
+        </li>
+        <li class="Habilidad">
+            <img src="Imagenes/visual-studio-svgrepo-com.svg" alt="Icono Visual Studio Code">
+            <p>Visual Studio Code</p>
+        </li>
+        <li class="Habilidad">
+            <img src="Imagenes/github-svgrepo-com.svg" alt="Icono Git/Github">
+            <p>Git/Github</p>
+        </li>
+    </ul>
         </section>
 
         <section id="Contacto">
