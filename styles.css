@@ -1,3 +1,4 @@
+/* Estilos generales */
 html {
     scroll-behavior: smooth;
     font-size: 20px;
@@ -11,14 +12,11 @@ body {
     margin: 0;
 }
 
-.ParrafoPresentacion{
-    color: #2274A5;
-}
-
 h2, h3 {
     line-height: 1;
 }
 
+/* Encabezado y barra nav */
 header {
     background-color: #131B23;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
@@ -48,7 +46,7 @@ nav {
     gap: 1rem;
 }
 
-/* oculta la barra de navegacion en móvil */
+/* menú que oculta la barra de navegacion en móvil */
 #menu {
     display: none;
     flex-direction: row;
@@ -79,15 +77,9 @@ section {
     box-shadow: 0px 4px 12px grey;
 }
 
-.Tarjeta {
-    color: black;
-    background-color: #EDF7F6;
-    padding: 20px;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 315px;
-    margin: 20px auto;
-    transition: transform 0.2s, box-shadow 0.2s;
+/* seccion de presentacion */
+.ParrafoPresentacion{
+    color: #2274A5;
 }
 
 #Presentacion {
@@ -158,6 +150,7 @@ h1 {
     transition: transform 0.2s, background-color 0.2s;
 }
 
+/* estilos para algunos botones */
 .boton_Proyectos {
     background-color: #2274A5;
     color: white;
@@ -173,6 +166,18 @@ h1 {
     transform: scale(1.05);
 }
 
+.Tarjeta {
+    color: black;
+    background-color: #EDF7F6;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 315px;
+    margin: 20px auto;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Seccion sobre mi */
 #Sobre_mi {
     background-color: #816C61;
     color: #E9F1F7;
@@ -232,6 +237,7 @@ h1 {
     transform: translateY(-10px);
 }
 
+/* seccion de proyectos */
 #Proyectos {
     color: black;
     display: flex;
@@ -271,6 +277,7 @@ h1 {
     display: none;
 }
 
+/* seccion de habilidades */
 #Habilidades {
     background-color: #2274A5;
     text-align: center;
@@ -308,6 +315,7 @@ h1 {
     transform: scale(1.05);
 }
 
+/* seccion de contacto y footer */
 #Contacto {
     display: flex;
     align-items: center;
@@ -356,7 +364,9 @@ footer {
     color: white;
 }
 
-/* ===== TABLET ===== */
+/* Metodos de responsive */
+
+/* Para tablet */
 @media (min-width: 768px) {
     #menu {
         display: flex;
@@ -373,7 +383,7 @@ footer {
     }
 }
 
-/* ===== DESKTOP ===== */
+/* Para desktop */
 @media (min-width: 1024px) {
     #Sobre_mi {
         display: flex;
@@ -395,3 +405,10 @@ footer {
     }
 }
 
+/* Para una desktop mas grande */
+@media (min-width: 1440px) {
+    main {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
